@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OperationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#ccc"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+
+
+
+                <Button
+                    android:id="@+id/btn_transfera"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Transfera"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:textColor="@color/white"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/et_amount"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:background="@null"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:textSize="54dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#633a82"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/et_iban"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:hint="IBAN"
+                    android:background="@null"
+                    android:textColor="@color/white"
+                    android:textSize="54dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/tv_amount_cont"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_swap_calls_24" />
+    </RelativeLayout>
+
+</FrameLayout>
